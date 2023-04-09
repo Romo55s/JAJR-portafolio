@@ -1,21 +1,25 @@
 :root {
-    --black: #000000;
-    --blue: #0077be;
-    --light-blue: #4da8da;
+    --yellow: #f7bf0a;
+    --yellow-alt: #ffd700;
     --white: #ffffff;
+    --gray-black: #181818;
 }
 
-*{
+* {
+    padding: 0;
     margin: 0%;
     box-sizing: border-box;
 }
 
-body{
+body {
+    background-color: var(--gray-black);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container{
+.container {
     margin: 0 auto;
-    max-width: 1500px;
-    outline: 0px solid white;
+}
+
+.typed-cursor {
+    display: none;
 }
