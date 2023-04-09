@@ -3,6 +3,7 @@
     --yellow-alt: #ffd700;
     --white: #ffffff;
     --gray-black: #181818;
+    --gray-ligth: #b6b6b6;
 }
 
 * {
@@ -22,4 +23,13 @@ body {
 
 .typed-cursor {
     display: none;
+}
+
+h1{
+    padding: 1rem 0;
+    text-align: center;
+    letter-spacing: 1px;
+    color: var(--yellow);
+    outline: 1px solid white;
+    font-family: 'Roboto Condensed', sans-serif; 
 }
