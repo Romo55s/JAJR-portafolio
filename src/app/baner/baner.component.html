@@ -1,11 +1,19 @@
 <div class="container">
-    <div class="tittle">
+    <div class="text">
         <p>Hi, I am</p>
         <p>Antonio Romo</p>
+        <ngx-typed-js
+            [strings]="['Software Developer', 'Web Developer']"
+            [typeSpeed]="80" 
+            [backSpeed]="0" 
+            [backDelay]="500" 
+            [startDelay]="500"
+            [loop]="true" 
+        >
+            <p class="typing" style="color: rgb(236, 202, 9);"></p>
+        </ngx-typed-js>
     </div>
-    <div class="profile">
-        <div class="profile-bg">
-            <img src="../../assets/img/_BIK0159-removebg-preview.png" alt="">
-        </div>
-    </div>
+    <video muted autoplay loop>
+        <source src="../../assets/media/BackgroundBillyDepechemode.mp4" type="video/mp4">
+    </video>
 </div>
