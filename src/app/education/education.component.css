@@ -1,34 +1,51 @@
-:host{
+:host {
     display: block;
     color: white;
     padding: 3rem 2rem;
 }
 
-section{
+section {
     margin-top: 2rem;
 }
 
-section h2{
+section h2 {
     color: var(--yellow-alt);
 }
 
-section h4{
+section h4 {
     color: var(--gray-ligth);
+}
+
+.picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: var(--gray-ligth);
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.picture img {
+    padding-right: 115px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* PC */
 
-:host.pc section{
-    width: 600px;
+:host.pc section {
+    width:cover;
     position: relative;
-    margin-left: 5rem;
     display: grid;
     gap: 0 1.5rem;
-    grid-template-columns: 1fr 5fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
 }
 
-:host.pc section h4:nth-child(4){
+:host.pc section h4:nth-child(4) {
     grid-row: 1/4;
     margin-top: 0%;
     display: flex;
@@ -36,4 +53,13 @@ section h4{
     align-items: center;
     justify-content: center;
     border-right: 1px solid white;
+}
+
+:host.pc .picture {
+    margin-top: 13.5rem;
+    transform: scale(1.5);
+}
+
+:host.pc .picture img {
+    position: relative;
 }

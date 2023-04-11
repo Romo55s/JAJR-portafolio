@@ -26,12 +26,12 @@ export class SkillsComponent {
     {
       name: 'MySQL',
       level: 'Regular',
-      rating: 60,
+      rating: 70,
     },
     {
       name: 'Java',
       level: 'Regular',
-      rating: 65,
+      rating: 70,
     },
     {
       name: 'PHP',
